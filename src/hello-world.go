@@ -3,11 +3,10 @@ package main
 import (
     "fmt"
     "net/http"
-    "os"
 )
 
 func main() {
-    message := os.Getenv("MESSAGE")
+    message := "MESSAGE - 01"
 
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, message)

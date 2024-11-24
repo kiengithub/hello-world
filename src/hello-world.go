@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    message := "MESSAGE - 30"
+    message := "MESSAGE - 31"
 
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, message)
